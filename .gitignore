@@ -1,0 +1,16 @@
+﻿# 可执行文件
+*.exe
+*.o
+*.obj
+*.out
+*.dll
+
+
+# VS Code 配置（可选忽略）
+.vscode/
+
+
+# 临时文件
+*.tmp
+*.log
+*.bak
