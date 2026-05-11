@@ -3,7 +3,7 @@ using namespace std;
 
 // Dijkstra 算法模板
 // g是图的邻接表表示，g[u]是一个vector，里面存储了所有与u相邻的边，每条边用一个pair<int, int>表示，第一个int是相邻节点v，第二个int是边权w
-// start是起点，price距离数组的初始值
+// start是起点，price距离数组的初始值，表示不可达的距离
 vector<int> dijkstra(vector<vector<pair<int, int>>> &g, int start, int price) {
     vector<int> dis(g.size(), price); // 初始化距离数组，初始值为price
     dis[start] = 0; // 起点到自己的距离为0
